@@ -7,7 +7,6 @@ function CategoryFilter({ categories, tasks, setFilteredTasks }) {
   function handleCategoryClick(category) {
     setSelectedCategory(category);
 
-    // Filter tasks based on selected category
     const filteredTasks = category === "All" ? tasks : tasks.filter(task => task.category === category);
     setFilteredTasks(filteredTasks);
   }
